@@ -18,7 +18,8 @@
 	},
 	"dependencies": {
 		"react": "19.2.1",
-		"react-dom": "19.2.1"
+		"react-dom": "19.2.1",
+		"mimetext": "^3.0.24"
 	},
 	"devDependencies": {
 		"@cloudflare/vite-plugin": "1.15.3",
