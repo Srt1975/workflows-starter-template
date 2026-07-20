@@ -1,4 +1,4 @@
-import { env, introspectWorkflowInstance } from "cloudflare:test";
+import { env } from "cloudflare:workers";
 import { describe, it, expect } from "vitest";
 
 describe("MyWorkflow", () => {
@@ -10,7 +10,7 @@ describe("MyWorkflow", () => {
 			instanceId,
 		);
 
-		await instance.modify(async (m) => {
+		await instance.modify(async (m: SomeType) => {
 			await m.disableSleeps();
 			await m.mockEvent({
 				type: "user-approval",
@@ -36,7 +36,7 @@ describe("MyWorkflow", () => {
 			instanceId,
 		);
 
-		await instance.modify(async (m) => {
+		await instance.modify(async (m: SomeType) => {
 			await m.disableSleeps();
 			await m.forceEventTimeout({ name: "wait for approval" });
 		});
