@@ -13,5 +13,6 @@
 	],
 	"compilerOptions": {
 		"types": ["./worker-configuration.d.ts"]
-	}
+	},
+	"exclude": ["test", "node_modules"]
 }

@@ -9,5 +9,6 @@
 			"@cloudflare/vitest-pool-workers"
 		]
 	},
-	"include": ["./worker-configuration.d.ts", "./worker", "./test"]
+	"include": ["./worker-configuration.d.ts", "./worker"],
+	"exclude": ["test", "node_modules"]
 }
